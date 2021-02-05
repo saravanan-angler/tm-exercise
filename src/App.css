@@ -1,3 +1,5 @@
+@import "./font.css";
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,130 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  width: 380px;
+  height: auto;
+  margin: auto;
+  box-shadow: 0px 0px 7px #00000029;
+  background-color: #fff;
+  border-top: 2px solid #2e8b57;
+  padding: 40px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-family: Roboto-Bold;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  flex-flow: row wrap;
+}
+
+.form-control {
+  margin: 10px 0;
+  display: flex;
+  flex-basis: 100%;
+  flex-flow: row wrap;
+}
+
+.text {
+  font-size: 20px;
+  font-family: Roboto-Bold;
+  display: flex;
+  flex-basis: 100%;
+  text-transform: capitalize;
+}
+
+.form-field {
+  display: flex;
+  flex-basis: 100%;
+  padding: 10px;
+  border: 1px solid #80808070;
+  height: 25px;
+  font-size: 18px;
+  font-family: Roboto-Regular;
+}
+
+.check-box-label {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  font-size: 16px;
+  font-family: Roboto-Medium;
+  color: #353131;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  height: 16px;
+  width: 16px;
+  margin-right: 6px;
+}
+
+button {
+  display: flex;
+  flex-basis: 100%;
+  padding: 12px;
+  justify-content: center;
+  font-size: 14px;
+  background: #2e8b57;
+  border: 0;
+  color: #fff;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+p {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  color: #000000b5;
+}
+
+a {
+  color: #000000;
+  text-decoration: underline;
+  font-family: Roboto-Bold;
+  cursor: pointer;
+}
+
+.signup {
+  margin-left: 5px;
+}
+
+.error {
+  border: 1px solid #cc0033;
+  outline: none;
+  border-radius: 2px;
+}
+
+.error-message {
+  color: #cc0033;
+  font-size: 14px;
+  display: inline-block;
+  margin: 6px 0px;
+}
+
+.disabled {
+  opacity: 0.48;
+  pointer-events: none;
 }
